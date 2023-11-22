@@ -1,0 +1,42 @@
+[
+    {
+        "title": "React.JS",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/bgreact.png"
+    },
+    {
+        "title": "Next.JS ",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/bgnext.webp"
+    },
+    {
+        "title": "Node.JS ",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/bgnode.png"
+    },
+    {
+        "title": "Redux ToolKit",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/reduxtoolkit.png"
+    },
+    {
+        "title": "JavaScript(ES6)",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/bgjs.jpeg"
+    },
+    {
+        "title": "MongoDB/Mongosee",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/monogodb.png"
+    },
+    {
+        "title": "TailWind/Bootstrap",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/bgtb.jpg"
+    },
+    {
+        "title": "Framer Motion",
+        "description": "I am Passinative React developer with 1+ year experince ",
+        "imgUrl": "/src/assets/framer.png"
+    }
+]

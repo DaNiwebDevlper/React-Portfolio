@@ -1,0 +1,12 @@
+{
+    "name": "Danish",
+    "skill": "MENR Developer",
+    "jobtitle":"Freelancer",
+    "profileImg":"src/assets/profile.png",
+    "skillsImages":[
+        "src/assets/redux.png",
+        "src/assets/react.png",
+        "src/assets/node.png"
+    ]
+
+}

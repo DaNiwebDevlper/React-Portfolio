@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-base: "DM Sans", sans-serif;
+  
+    --primary-color: #222;
+    --lightdark-color: #3333;
+    --secondary-color: #0abab5;
+    --black-color: #030303;
+    --lightGray-color: #e4e4e4;
+    --gray-color: #e1e9f5;
+    --brown-color: #46364a;
+    --white-color: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  .app{
+    background:  var(--primary-color);
+  }
