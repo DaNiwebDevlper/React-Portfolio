@@ -30,26 +30,17 @@
     },
     {
         "id": "3",
-        "title": "Project-3",
-        "stack": "JS",
-        "imgUrl": "/src/assets/about03.png"
-    },
-    {
-        "id": "4",
-        "title": "Project-4",
+        "title": "Car Showroom",
         "stack": "React",
-        "imgUrl": "/src/assets/about04.png"
-    },
-    {
-        "id": "5",
-        "title": "Project-5",
-        "stack": "Next",
-        "imgUrl": "/src/assets/about01.png"
-    },
-    {
-        "id": "6",
-        "title": "Project-6",
-        "stack": "JS",
-        "imgUrl": "/src/assets/about02.png"
+        "imgUrl": "/src/assets/car-site/banner.png",
+        "shortDescription":"A fully functional Car-Buying app developed Next.js, for styling use Tailwind CSS, and DataBase use MongoDB",
+        "description":"Excited to showcase my latest project: a fully functional Car showroom app developed in Next.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
+        "images": [
+            "/src/assets/car-site/landing-page.png",
+            "/src/assets/car-site/car-category.png",
+            "/src/assets/car-site/car-details.png"
+            
+        ]
     }
+   
 ]

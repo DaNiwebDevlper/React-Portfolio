@@ -48,7 +48,7 @@ const ProjectDetail = () => {
                                 </div>
                             </div>
                         </div>
-                    ) : <h1>Projects Details in not provide</h1>
+                    ) : ""
                 )
             })}
         </div>

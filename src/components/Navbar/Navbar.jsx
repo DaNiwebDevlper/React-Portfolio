@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import images from "../../constant/images";
-import './NavBar.scss'
+// import './NavBar.scss'
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="app__navbar w-full sticky z-10 top-0 shadow-md shadow-[#333 z-20">
+    <nav className="app__navbar w-full backdrop-blur-sm bg-[#222]/40 sticky z-10 top-0 shadow-md shadow-[#333 z-20">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
