@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import images from '../../constant/images'
+// import images from '../../constant/images'
 import { FaLinkedin } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
 import {AiFillGithub} from 'react-icons/ai'
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center mb-4 sm:mb-0">
-            <img src={images.logo} className="mr-9 w-[120px] h-[30px]" alt="Logo" />
+            <img src="/assets/logo.png" className="mr-9 w-[120px] h-[30px]" alt="Logo" />
 
           </Link>
 

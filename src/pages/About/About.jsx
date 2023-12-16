@@ -1,5 +1,4 @@
 import React from 'react'
-import images from "../../constant/images"
 import about from '../../data/About.json'
 import { motion } from 'framer-motion'
 import { FaLinkedin } from 'react-icons/fa'

@@ -1,10 +1,10 @@
 {
     "title": "About Me",
     "description":" Hi! I am Danish, a MERN Developer. I am passionate about creating Full-Stack responsive sites that is user-friendly and loaded with lots of usefull features, like filltering, animation, responsive design, and manay more. I also have knowledge of TypeScript—and familiarity with version control systems such as Git, Git Hub, and Git Lab.I am also a freelancer and I available for new opportunities. If you are interested in working with me, please contact me at 'dnazir343@gmail' .com. Thank you for visiting my website! ",
-    "imgUrl": "/src/assets/danish.jpg",
+    "imgUrl": "/assets/danish.jpg",
     "gmail":"dnazir343@gmail.com",
     "linkedin":"https://www.linkedin.com/in/danish-nazir-553310272",
     "upWork":"https://www.upwork.com/workwith/danig6",
     "gitHub": "https://github.com/DaNiwebDevlper",
-    "cv": "/src/assets/danishCV.docx"
+    "cv": "/assets/danishCV.docx"
 }

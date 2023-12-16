@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import images from "../../constant/images";
+
+
 // import './NavBar.scss'
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -15,7 +15,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
             <Link to="/">
               <img
-                src={images.logo}
+                src="/assets/logo.png"
                 alt="Logo"
                 className="w-[170px]"
               />

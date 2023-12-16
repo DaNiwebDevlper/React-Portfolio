@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import images from '../../constant/images'
 import header from "../../data/Header.json"
 const Header = () => {
 
@@ -17,7 +16,7 @@ const Header = () => {
 
     const backgroundImage = {
         position:"relative",
-        background: ' url("/src/assets/bg.svg") no-repeat',
+        background: ' url("/assets/bg.svg") no-repeat',
         backgroundSize: "cover",
         backgroundPosition: " center",
         backgroundRepeat: "repeat",
@@ -50,12 +49,12 @@ const Header = () => {
                         transition={{ duration: 1, delayChildren: 1 }}
                         className='relative flex flex-1 h-full justify-end items-end'>
 
-                        <img src={header.profileImg} alt="profile_bg" className='z-10 relative md:top-[345px] md:right-[70px] right-9 md:w-[350px] w-[300px] bottom-7 ' />
+                        <img src="/assets/profile.png" alt="profile_bg" className='z-10 relative md:top-[345px] md:right-[70px] right-9 md:w-[350px] w-[300px] bottom-7 ' />
 
                         <motion.img
                             whileInView={{ scale: [0, 1] }}
                             transition={{ duration: 1.5, ease: "easeInOut" }}
-                            src={images.circle}
+                            src="assets/circle.svg"
                             alt='profile-circle'
                             className='md:w-[400px] w-[350px] z-0 top-0 md:right-[55px] right-7 absolute opacity-40' />
 

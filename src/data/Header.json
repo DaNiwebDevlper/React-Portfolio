@@ -4,9 +4,9 @@
     "jobtitle":"Freelancer",
     "profileImg":"src/assets/profile.png",
     "skillsImages":[
-        "src/assets/redux.png",
-        "src/assets/react.png",
-        "src/assets/node.png"
+        "/assets/redux.png",
+        "/assets/react.png",
+        "/assets/node.png"
     ]
 
 }
