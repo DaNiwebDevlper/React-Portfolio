@@ -22,10 +22,10 @@ const Project = () => {
 
       <div
         className="flex flex-col justify-center items-center">
-        <h1 className='md:text-4xl text-3xl font-bold my-5 text-slate-200'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
+        <h1 className='md:text-4xl text-2xl text-center font-bold my-5 text-slate-200'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
 
 
-        <div className="flex gap-3 justify-center items-center my-6">
+        <div className="flex md:gap-3 gap-2 justify-center items-center my-6">
 
           {filterOptions.map((option) => (
             <button

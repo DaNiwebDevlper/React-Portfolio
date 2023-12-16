@@ -20,7 +20,7 @@ const About = () => {
       </div>
 
       <h1 className='text-5xl uppercase my-3 font-semibold bg-gradient-to-r from-teal-500 to-teal-300 bg-clip-text text-transparent'>{about.title}</h1>
-      <p className='md:text-md text-white/60 text-lg text-justify p-5 md:w-[60%] w-[80%]'>
+      <p className='md:text-md text-white/60 text-lg text-justify p-5 md:w-[60%] w-[90%]'>
         {about.description}
       </p>
 
