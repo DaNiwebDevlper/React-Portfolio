@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 
-// import './NavBar.scss'
+const NavLinks = [
+  { name: "Home", path: "/" },
+  { name: "Projects", path: "/projects" },
+  { name: "Skills", path: "/skills" },
+  { name: "About", path: "/about" },
+  { name: "Contact", path: "/contact" },
+]
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -20,7 +26,7 @@ export default function NavBar() {
                 className="w-[170px]"
               />
             </Link>
-           
+
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -66,70 +72,24 @@ export default function NavBar() {
           >
             <ul
               className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 px-4 py-4 font-semibold rounded-full md:ml-[-70px]">
-              <li
-                className="text-black font-semibold text-[18px]
+              
+              {NavLinks.map((navLink) => (
+                <li
+                  className="text-black font-semibold text-[18px]
                hover:text-rose-800"
-              >
-                <NavLink
-                  onClick={() => setNavbar(false)}
-                  to="/"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent  lg:border-0 hover:text-[#0abab4d0] lg:p-0`
-                  }
                 >
-                  Home
-                </NavLink>
-              </li>
-              <li className="text-black font-[500] text-[18px] hover:text-[#0abab4d0]">
-                <NavLink
-                  to="/skills"
-                  onClick={() => setNavbar(false)}
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#0abab4d0] lg:p-0`
-                  }
-                >
-                  Skills
-                </NavLink>
-              </li>
-              <li className="text-black font-[500] text-[18px] hover:text-[#0abab4d0]">
-                <NavLink
-                  to="/projects"
-                  onClick={() => setNavbar(false)}
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#0abab4d0] lg:p-0`
-                  }
-                >
-                  Projects
-                </NavLink>
-              </li>
-              <li className="text-black font-[500] text-[18px] hover:text-[#0abab4d0]">
-                <NavLink
-                  to="/about"
-                  onClick={() => setNavbar(false)}
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#0abab4d0] lg:p-0`
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
-
-              <li className="text-black font-[500] text-[18px] hover:text-[#0abab4d0]">
-                <NavLink
-                  to="/contact"
-                  onClick={() => setNavbar(false)}
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#0abab4d0] lg:p-0`
-                  }
-                >
-                  Contact
-                </NavLink>
-              </li>
+                  <NavLink
+                    onClick={() => setNavbar(false)}
+                    to={navLink.path}
+                    className={({ isActive }) =>
+                      `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
+                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent  lg:border-0 hover:text-[#0abab4d0] lg:p-0`
+                    }
+                  >
+                    {navLink.name}
+                  </NavLink>
+                </li>
+              ))}
 
             </ul>
           </div>

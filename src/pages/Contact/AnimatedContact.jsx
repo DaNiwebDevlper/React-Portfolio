@@ -2,44 +2,49 @@ import { useState } from 'react';
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
-const AnimatedContact = () => {
-    const Ref = useRef()
-    const openGmail = ({ gmail }) => {
-        window.location.href = `mailto: dnazir343@gmail.com`;
-    };
 
-    ////////////////---Email.JS---////////////////////
-const [err, setErr] = useState(false);
-const [success, setSuccess] = useState(false);
+const AnimatedContact = () => {
+
+    ////////////////---Web3form---////////////////////
+    const [success, setSuccess] = useState(false);
 
     const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_a86tnan', 'template_u6wttrr', form.current, 'x_JgLoQG4oy-oU5B1')
-        .then((result) => {
-            setSuccess(true)
-        }, (error) => {
-            setErr(true)
-        });
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "c5337b27-2f6e-4409-9479-10dc437b88aa");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            setSuccess("Success", res);
+        }
     };
-   
+
     const isInView = useInView(Ref, { margin: "-100px" })
     return (
         <>
             <motion.div
-            
-                ref={Ref}
                 className="min-h-[90vh] flex md:flex-row md:w-[90%]  flex-col-reverse"
             >
                 {/* //////////////////////---Cotact-Info---/////////////////////// */}
                 <div className="md:w-[50%] md:ml-11 md:pt-0 pt-6 md:mb-0 mb-9 flex flex-col pl-9 justify-center  gap-5">
                     <motion.h1 className='text-white font-bold md:text-4xl text-3xl italic font-sans '
-                        whileInView={{ y: [100, 0], opacity: [0,1] }}
+                        whileInView={{ y: [100, 0], opacity: [0, 1] }}
                         transition={{ duration: [1] }}>Let's Work Together</motion.h1>
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0,1] }}
+                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.2] }} >
 
                         <h2 className='md:text-2xl text-xl text-white font-semibold'>Mail</h2>
@@ -51,7 +56,7 @@ const [success, setSuccess] = useState(false);
                     </motion.div>
 
 
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0,1] }}
+                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.4] }}>
 
                         <Link to="https://linkedin.com/in/danish-nazir-553310272" target='_blank'
@@ -63,7 +68,7 @@ const [success, setSuccess] = useState(false);
                             </span>
                         </Link>
                     </motion.div>
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0,1] }}
+                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.6] }}>
 
                         <Link to="https://www.upwork.com/workwith/danig6" target='_blank'>
@@ -83,12 +88,12 @@ const [success, setSuccess] = useState(false);
                 {/* //////////////////////---Cotact-Form---/////////////////////// */}
                 <div className="text-center flex flex-col justify-center items-center md:h-auto min-h-[90vh]">
                     <motion.div className=" relative "
-                        whileInView={{ opacity: 0}}
+                        whileInView={{ opacity: 0 }}
                         initial={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 3 }}
                     >
 
-                        <svg  className='absolute left-[-160px] top-[100px] md:top-[-10px] md:w-[400px] md:h-[400px] w-[300px] h-[300px] stroke-teal-600' width="400px" height="400px" viewBox="0 0 32 32" >
+                        <svg className='absolute left-[-160px] top-[100px] md:top-[-10px] md:w-[400px] md:h-[400px] w-[300px] h-[300px] stroke-teal-600' width="400px" height="400px" viewBox="0 0 32 32" >
 
                             <motion.path
                                 initial={{ pathLength: 0 }}
@@ -102,14 +107,12 @@ const [success, setSuccess] = useState(false);
                     </motion.div>
 
                     <motion.div className="z-10"
-                        whileInView={{ opacity: 1, y:[100, 0]  }}
+                        whileInView={{ opacity: 1, y: [100, 0] }}
                         initial={{ opacity: 0 }}
                         transition={{ duration: 1, delay: 4 }}>
 
-                        <form onSubmit={sendEmail}
-                        ref={form}>
-
-
+                        <form onSubmit={onSubmit}>
+                  
                             <input
                                 type="text"
                                 id="name"
@@ -135,11 +138,11 @@ const [success, setSuccess] = useState(false);
                             ></textarea>
 
 
-                        <button className='bg-teal-600 hover:bg-teal-700 text-white py-2 w-[80%] rounded md:text-xl text-lg my-5 text-center' >Submit</button>
-                        <p className='text-xl text-green-500 uppercase'>{success && "Message is Send Succesfully"}</p>
-                        <p className='text-xl text-red-500 uppercase'>{err && "Message is not send (Please check your email)"}</p>
+                            <button className='bg-teal-600 hover:bg-teal-700 text-white py-2 w-[80%] rounded md:text-xl text-lg my-5 text-center' type='submit' >Submit</button>
+                            <p className='text-xl text-green-500 uppercase'>{success && "Message is Send Succesfully"}</p>
+
                         </form>
-                        
+
                     </motion.div>
                 </div>
             </motion.div>
