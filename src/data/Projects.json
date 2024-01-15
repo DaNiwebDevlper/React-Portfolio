@@ -3,44 +3,47 @@
         "id": "1",
         "title": "College Site",
         "stack": "React",
-        "shortDescription":"A fully functional college website created using React.js, for styling use Tailwind CSS, and DataBase use MongoDB",
-        "description":"Excited to showcase my latest project: a fully functional college website created using React.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
+        "shortDescription": "A fully functional college website created using React.js, for styling use Tailwind CSS, and DataBase use MongoDB",
+        "description": "Excited to showcase my latest project: a fully functional college website created using React.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
         "imgUrl": "/assets/college-site/banner.png",
         "images": [
             "/assets/college-site/lading-page.png",
             "/assets/college-site/department.png",
             "/assets/college-site/gallery.png",
             "/assets/college-site/principal-msg.png"
-        ]
+        ],
+        "liveLink": "https://college-site-gmgc.netlify.app",
+        "gitHubLink": "https://github.com/DaNiwebDevlper/college_site"
     },
-
     {
         "id": "2",
         "title": "iG Downloader",
         "stack": "Next",
-        "shortDescription":"A fully functional instagram reels downloader website created using Next.js, for styling use Tailwind CSS, and DataBase use MongoDB",
-        "description":"Excited to showcase my latest project: a fully functional college website created using React.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
+        "shortDescription": "A fully functional instagram reels downloader website created using Next.js, for styling use Tailwind CSS, and MongoDB",
+        "description": "Excited to showcase my latest project: a fully functional college website created using React.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
         "imgUrl": "/assets/iG-downloader/banner.png",
         "images": [
             "/assets/college-site/lading-page.png",
             "/assets/college-site/department.png",
             "/assets/college-site/gallery.png",
             "/assets/college-site/principal-msg.png"
-        ]
+        ],
+        "liveLink": "https://github.com/DaNiwebDevlper/iG-downloader.git",
+        "gitHubLink": "https://github.com/DaNiwebDevlper/iG-downloader.git"
     },
     {
         "id": "3",
         "title": "Car Showroom",
         "stack": "React",
         "imgUrl": "/assets/car-site/banner.png",
-        "shortDescription":"A fully functional Car-Buying app developed Next.js, for styling use Tailwind CSS, and DataBase use MongoDB",
-        "description":"Excited to showcase my latest project: a fully functional Car showroom app developed in Next.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
+        "shortDescription": "A fully functional Car-Buying app developed Next.js, for styling use Tailwind CSS, and DataBase use MongoDB",
+        "description": "Excited to showcase my latest project: a fully functional Car showroom app developed in Next.js. This website offers an immersive and informative experience, with a user-friendly design and dynamic features, it's a testament to my skills in web development and delivering outstanding user experiences.",
         "images": [
             "/assets/car-site/landing-page.png",
             "/assets/car-site/car-category.png",
             "/assets/car-site/car-details.png"
-            
-        ]
+        ],
+        "liveLink": "https://github.com/DaNiwebDevlper/Car-WebSite.git",
+        "gitHubLink": "https://github.com/DaNiwebDevlper/Car-WebSite.git"
     }
-   
 ]

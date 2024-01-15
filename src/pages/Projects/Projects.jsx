@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import projects from '../../data/Projects.json';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import { AiFillMail, AiFillGithub } from 'react-icons/ai'
 const Project = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
 
@@ -58,12 +58,21 @@ const Project = () => {
               </div>
 
               <h1 className='text-teal-500 font-bold text-center py-3 text-2xl capitalize'>{project.title}</h1>
-              <p className='text-slate-300 text-md px-5 text-justify pb-1'>{project.shortDescription}</p>
+              <p className='text-slate-300 text-md px-5 text-justify'>{project.shortDescription}</p>
 
-              <Link to={"/projects/" + project.id}>
-                <button className='p-2 rounded-md text-md text-teal-500 ml-3 w-fit hover:underline cursor-pointer'>Read more &rarr;
-                </button>
-              </Link>
+              <div className="flex justify-between px-5 items-center my-2 border rounded-full mx-3 hover:border-teal-500 transition">
+
+                <Link to={project.liveLink} target='_blank'>
+                  <button className='p-2 rounded-md text-sm text-white  w-fit hover:underline cursor-pointer'>Live demo
+                  </button>
+                </Link>
+
+                <Link to={project.gitHubLink} target='_blank'>
+                  <button className='py-2 px-6 rounded-md text-sm text-white  ml-3 w-fit hover:underline cursor-pointer'><AiFillGithub className='text-2xl'/>
+                  </button>
+                </Link>
+              </div>
+
             </motion.div>)
 
         })}

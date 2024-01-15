@@ -5,10 +5,14 @@ import { Link } from 'react-router-dom';
 
 const AnimatedContact = () => {
 
+    const openGmail = () => {
+        window.location.href = `mailto:dnazir343@gmail.com`;
+      };
+
     ////////////////---Web3form---////////////////////
     const [success, setSuccess] = useState(false);
 
-    const form = useRef();
+    const Ref = useRef();
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -86,7 +90,7 @@ const AnimatedContact = () => {
 
                 </div>
                 {/* //////////////////////---Cotact-Form---/////////////////////// */}
-                <div className="text-center flex flex-col justify-center items-center md:h-auto min-h-[90vh]">
+                <div className="text-center flex flex-col justify-center items-center md:h-auto min-h-[90vh]" ref={Ref}>
                     <motion.div className=" relative "
                         whileInView={{ opacity: 0 }}
                         initial={{ opacity: 1 }}
@@ -112,7 +116,7 @@ const AnimatedContact = () => {
                         transition={{ duration: 1, delay: 4 }}>
 
                         <form onSubmit={onSubmit}>
-                  
+
                             <input
                                 type="text"
                                 id="name"
