@@ -21,7 +21,7 @@ const Project = () => {
       transition={{ duration: 1, }}>
 
       <div
-        className="flex flex-col justify-center items-center min-h-[60vh]">
+        className="flex flex-col justify-center items-center">
         <h1 className='md:text-4xl text-2xl text-center font-bold my-5 text-slate-200'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
 
 
@@ -60,7 +60,7 @@ const Project = () => {
               <h1 className='text-white/90 font-bold text-center py-3 text-2xl capitalize'>{project.title}</h1>
               {/* <p className='text-slate-300 text-md px-5 text-justify'>{project.shortDescription}</p> */}
 
-              <div className="flex justify-between px-5 items-center my-2 border rounded-full mx-3 hover:border-teal-500 transition">
+              <div className="flex justify-between px-5 items-center my-2 border rounded-full mx-3 hover:border-teal-500 transition mb-5 border-white/10">
 
                 <Link to={project.liveLink} target='_blank'>
                   <button className='p-2 rounded-md text-sm text-white  w-fit hover:underline cursor-pointer'>Live demo

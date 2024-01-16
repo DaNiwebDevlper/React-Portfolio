@@ -22,7 +22,7 @@ const Home = () => {
         <Experience />
       </div>
 
-      <div className="mt-[100px]">
+      <div>
         <AnimatedContent />
       </div>
 
