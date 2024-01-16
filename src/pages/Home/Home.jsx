@@ -22,11 +22,6 @@ const Home = () => {
         <Experience />
       </div>
 
-      <div>
-        <AnimatedContent />
-      </div>
-
-
     </div>
   )
 }
