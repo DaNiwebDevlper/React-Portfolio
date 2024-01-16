@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import { Home, Skills, Projects, Contact, About, ProjectDetail } from './pages/index.js'
+import { Home, Skills, Projects,  About, ProjectDetail } from './pages/index.js'
 import AnimatedContact from './pages/Contact/AnimatedContact.jsx'
 
 

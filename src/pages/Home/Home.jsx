@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-import { About, Projects, Skills } from "../index"
+import { About, AnimatedContent, Experience, Projects, Skills } from "../index"
 
 
 const Home = () => {
@@ -15,8 +15,15 @@ const Home = () => {
         <Skills />
       </div>
 
-      <div className="mt-9">
+      <div className="my-9">
         <Projects />
+      </div>
+      <div className="mt-[100px]">
+        <Experience />
+      </div>
+
+      <div className="mt-[100px]">
+        <AnimatedContent />
       </div>
 
 

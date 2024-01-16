@@ -17,11 +17,11 @@ const Project = () => {
 
   return (
     <motion.div
-      whileInView={{ y: [100, 0], opacity: [0, 1] }}
+      whileInView={{ y: [10, 0], opacity: [0, 1] }}
       transition={{ duration: 1, }}>
 
       <div
-        className="flex flex-col justify-center items-center">
+        className="flex flex-col justify-center items-center min-h-[60vh]">
         <h1 className='md:text-4xl text-2xl text-center font-bold my-5 text-slate-200'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
 
 
@@ -51,14 +51,14 @@ const Project = () => {
             <motion.div
               whileInView={{ opacity: [0, 1], y: [100, 0] }}
               transition={{ duration: 1, type: "tween" }}
-              className="w-[300px] shadow-lg shadow-black/50 md:w-[270px] h-[400px] bg-[#333] hover:border-teal-700 border-black border  rounded-xl overflow-hidden flex flex-col mx-5" key={project.id}>
+              className="w-[300px] shadow-lg shadow-black/50 md:w-[270px] h-fit bg-[#333] hover:border-teal-700 border-black border  rounded-xl overflow-hidden flex flex-col mx-5" key={project.id}>
               <div className="w-[300px] md:w-[270px] h-[180px] overflow-hidden">
                 <Link to={"/projects/" + project.id}>
                   <img src={project.imgUrl} alt={project.title} className='object-cover hover:scale-110 transition-all h-fit ' /></Link>
               </div>
 
-              <h1 className='text-teal-500 font-bold text-center py-3 text-2xl capitalize'>{project.title}</h1>
-              <p className='text-slate-300 text-md px-5 text-justify'>{project.shortDescription}</p>
+              <h1 className='text-white/90 font-bold text-center py-3 text-2xl capitalize'>{project.title}</h1>
+              {/* <p className='text-slate-300 text-md px-5 text-justify'>{project.shortDescription}</p> */}
 
               <div className="flex justify-between px-5 items-center my-2 border rounded-full mx-3 hover:border-teal-500 transition">
 

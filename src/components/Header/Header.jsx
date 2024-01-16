@@ -35,8 +35,8 @@ const Header = () => {
                             <h1 className='text-3xl pl-5 py-1 font-bold text-slate-100'>{header.name}</h1>
                         </div>
 
-                        <div className="bg-teal-500/10 w-[160px] mt-5 h-[80px] rounded-xl flex flex-col justify-center items-center ">
-                            <p className='text-md text-slate-200'>{header.skill}</p>
+                        <div className="bg-teal-500/10 text-lg w-fit px-7 uppercase mt-5 py-3 rounded-xl flex flex-col justify-center items-center ">
+                            <p className='text-md text-slate-200 '>{header.skill}</p>
                             <p className='text-md text-slate-200'>{header.jobtitle}</p>
                         </div>
                     </motion.div>
