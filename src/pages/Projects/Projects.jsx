@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
 import projects from '../../data/Projects.json';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { AiFillMail, AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { useState } from 'react';
 const Project = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
 
@@ -51,7 +51,7 @@ const Project = () => {
             <motion.div
               whileInView={{ opacity: [0, 1], y: [100, 0] }}
               transition={{ duration: 1, type: "tween" }}
-              className="w-[300px] shadow-lg shadow-black/50 md:w-[270px] h-fit bg-[#333] hover:border-teal-700 border-black border  rounded-xl overflow-hidden flex flex-col mx-5" key={project.id}>
+              className="w-[300px] shadow-lg shadow-black/50 md:w-[270px] h-fit bg-sec-color hover:border-teal-700 border-black border  rounded-xl overflow-hidden flex flex-col mx-5" key={project.id}>
               <div className="w-[300px] md:w-[270px] h-[180px] overflow-hidden">
                 <Link to={"/projects/" + project.id}>
                   <img src={project.imgUrl} alt={project.title} className='object-cover hover:scale-110 transition-all h-fit ' /></Link>

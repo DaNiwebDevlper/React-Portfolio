@@ -15,7 +15,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="app__navbar w-full backdrop-blur-md bg-[#222]/40 sticky z-10 top-0 shadow-md shadow-[#333 z-20">
+    <nav className="w-full backdrop-blur-md bg-[#111]/40 sticky z-10 top-0  md:z-20">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
@@ -72,12 +72,12 @@ export default function NavBar() {
           >
             <ul
               className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 px-4 py-4 font-semibold rounded-full md:ml-[-70px]">
-              
-              {NavLinks.map((navLink) => (
+
+              {NavLinks.map((navLink, i) => (
                 <li
                   className="text-black font-semibold text-[18px]
                hover:text-rose-800"
-                >
+                  key={i}>
                   <NavLink
                     onClick={() => setNavbar(false)}
                     to={navLink.path}

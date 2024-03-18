@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-import { About, AnimatedContent, Experience, Projects, Skills } from "../index"
+import { About, Experience, Projects, Skills } from "../index"
 
 
 const Home = () => {

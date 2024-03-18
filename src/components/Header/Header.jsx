@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import header from "../../data/Header.json"
 const Header = () => {
@@ -15,14 +14,14 @@ const Header = () => {
     }
 
     const backgroundImage = {
-        position:"relative",
+        position: "relative",
         background: ' url("/assets/bg.svg") no-repeat',
         backgroundSize: "cover",
         backgroundPosition: " center",
         backgroundRepeat: "repeat",
     }
     return (
-        <div className='app min-h-[90vh] md:h-[90vh]' style={backgroundImage}>
+        <div className='app min-h-[90vh] md:h-[90vh] relative' style={backgroundImage}>
             <div className="grid grid-rows-3 md:grid-cols-[1fr_minmax(200px,500px)_1fr] w-full h-full">
                 {/* /////---Intro-Badge---//// */}
                 <div className="flex md:justify-center justify-start  items-center  md:h-[90vh] ml-5">
@@ -42,36 +41,36 @@ const Header = () => {
                     </motion.div>
                 </div>
                 {/* /////---Picture-badge---//// */}
-                <div className="md:mt-[100px]">
+                <div className="md:mt-[100px] ">
 
                     <motion.div
                         whileInView={{ opacity: [0, 1] }}
                         transition={{ duration: 1, delayChildren: 1 }}
-                        className='relative flex flex-1 h-full justify-end items-end'>
+                        className='relative flex flex-1 h-full justify-center sm:justify-end sm:items-end'>
 
-                        <img src="/assets/profile.png" alt="profile_bg" className='z-10 relative md:top-[345px] md:right-[70px] right-9 md:w-[350px] w-[300px] bottom-7 ' />
+                        <img src="/assets/profile.png" alt="profile_bg" className='z-10 relative md:top-[345px] md:right-[70px] md:w-[350px] w-[300px] bottom-7 ' />
 
                         <motion.img
                             whileInView={{ scale: [0, 1] }}
                             transition={{ duration: 1.5, ease: "easeInOut" }}
                             src="assets/circle.svg"
                             alt='profile-circle'
-                            className='md:w-[400px] w-[350px] z-0 top-0 md:right-[55px] right-7 absolute opacity-40' />
+                            className='md:w-[400px] w-[350px] z-0 top-0 md:right-[55px]  absolute opacity-40' />
 
                     </motion.div>
 
                 </div>
                 {/* /////---Description-badge---//// */}
                 <motion.div
-                variants={sclaeVariants}
-                whileInView={sclaeVariants.whileInView}
-                className='flex flex-1 md:flex-col  md:h-screen gap-3 md:items-start items-start justify-center md:justify-center'>
-                {header.skillsImages.map((image, index) => (
-                    <div className='w-[100px] h-[100px] bg-teal-600/20 mt-9 md:mt-0  rounded-full flex items-center justify-center even:w-[120px] even:h-[120px] md:even:ml-9 even:mt-[80px] md:even:mt-0' key={`circle-${index}`}>
-                        <img src={image} alt="circle" className='w-[80px] h-[80px] ' key={index}/>
-                    </div>
-                ))}
-            </motion.div>
+                    variants={sclaeVariants}
+                    whileInView={sclaeVariants.whileInView}
+                    className='flex flex-1 md:flex-col  md:h-screen gap-3 md:items-start items-start justify-center md:justify-center'>
+                    {header.skillsImages.map((image, index) => (
+                        <div className='w-[100px] h-[100px] bg-teal-600/20 mt-9 md:mt-0  rounded-full flex items-center justify-center even:w-[120px] even:h-[120px] md:even:ml-9 even:mt-[80px] md:even:mt-0' key={`circle-${index}`}>
+                            <img src={image} alt="circle" className='w-[80px] h-[80px] ' key={index} />
+                        </div>
+                    ))}
+                </motion.div>
             </div>
 
         </div >

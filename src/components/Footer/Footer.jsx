@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 // import images from '../../constant/images'
 import { FaLinkedin } from 'react-icons/fa'
@@ -7,7 +6,7 @@ import {AiFillGithub} from 'react-icons/ai'
 const Footer = () => {
   return (
 
-    <footer className=" bg-[#222] border-t">
+    <footer className=" bg-sec-color border-t">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center mb-4 sm:mb-0">
