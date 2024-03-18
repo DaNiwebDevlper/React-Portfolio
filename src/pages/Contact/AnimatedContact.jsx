@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -47,7 +47,7 @@ const AnimatedContact = () => {
                 <div className="md:w-[50%] md:ml-11 md:pt-0 pt-6 md:mb-0 mb-9 flex flex-col pl-9 justify-center  gap-5">
                     <motion.h1 className='text-white font-bold md:text-4xl text-3xl italic font-sans '
                         whileInView={{ y: [100, 0], opacity: [0, 1] }}
-                        transition={{ duration: [1] }}>Let's Work Together</motion.h1>
+                        transition={{ duration: [1] }}>Lets Work Together</motion.h1>
                     <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.2] }} >
 
