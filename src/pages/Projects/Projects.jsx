@@ -39,7 +39,7 @@ const Project = () => {
           ))}
         </div>
 
-        <div className="md:w-[600px] w-[450px] h-[1px] bg-teal-600 mb-9"></div>
+        <div className="md:w-[600px] w-[350px] h-[1px] bg-teal-600 mb-9"></div>
 
 
       </div>

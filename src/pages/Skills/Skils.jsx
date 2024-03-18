@@ -25,7 +25,7 @@ const Skils = () => {
               whileInView={{ opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.5, type: "tween" }}
-              className='w-[200px] md:w-[250px] rounded-xl overflow-hidden bg-sec-color'
+              className='w-[150px] md:w-[250px] rounded-xl overflow-hidden bg-sec-color'
               key={index}>
 
               <img src={skill.imgUrl} alt={skill.title}

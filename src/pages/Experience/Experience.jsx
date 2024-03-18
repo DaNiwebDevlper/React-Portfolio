@@ -1,4 +1,3 @@
-import React from 'react'
 import experience from "../../data/Experience.json"
 import education from "../../data/Education.json"
 import { motion } from 'framer-motion';
@@ -7,7 +6,7 @@ const Experience = () => {
 
     <div className='w-full min-h-[90vh] flex flex-col md:flex-row justify-center items-center gap-9 flex-wrap mt-9'>
       {/* //////////////---Experince---/////// */}
-      <div className="md:w-[35%] w-[90%] rounded-lg text-white bg-[#333]/50 min-h-[80%]
+      <div className="md:w-[35%] w-[80%] rounded-lg text-white bg-[#333]/50 min-h-[80%]
       flex justify-center flex-col items-center py-5 ">
         <h1 className='uppercase text-2xl font-semibold text-center text-teal-500 mb-3 shadow-md'>Experience</h1>
 
@@ -30,7 +29,7 @@ const Experience = () => {
         </div>
       </div>
       {/* //////////////---Education---/////// */}
-      <div className="md:w-[35%] w-[90%] rounded-lg text-white bg-[#333]/50 min-h-[80%]
+      <div className="md:w-[35%] w-[80%] rounded-lg text-white bg-[#333]/50 min-h-[80%]
       flex justify-center flex-col items-center py-5 shadow-md mb-9 md:mb-0">
         <h1 className='uppercase text-2xl font-semibold text-center text-teal-500 mb-3'>Education</h1>
         <div className="text-white w-[80%] flex flex-col gap-5" >
