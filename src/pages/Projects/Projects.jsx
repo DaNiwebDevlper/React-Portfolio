@@ -1,8 +1,7 @@
 import projects from '../../data/Projects.json';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { AiFillGithub } from 'react-icons/ai'
 import { useState } from 'react';
+import { Card, Meteors } from '../../components';
 const Project = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
 
@@ -19,13 +18,16 @@ const Project = () => {
     <motion.div
       whileInView={{ y: [10, 0], opacity: [0, 1] }}
       transition={{ duration: 1, }}>
+      <div className="hidden sm:block">
 
+        <Meteors />
+      </div>
       <div
         className="flex flex-col justify-center items-center">
-        <h1 className='md:text-4xl text-2xl text-center font-bold my-5 text-slate-200'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
+        <h1 className='sm:text-4xl text-2xl text-center font-bold my-5 text-slate-200 font-madimi'>My Creative <span className='text-teal-500'>Projects</span> Section</h1>
 
 
-        <div className="flex md:gap-3 gap-2 justify-center items-center my-6">
+        <div className="flex sm:gap-3 gap-2 justify-center items-center my-6">
 
           {filterOptions.map((option) => (
             <button
@@ -43,7 +45,7 @@ const Project = () => {
 
 
       </div>
-      <div className='flex gap-5 flex-wrap justify-center mb-9'>
+      <div className='flex flex-wrap gap-x-9 justify-center items-center'>
         {filteredProjects.map((project) => {
 
 
@@ -51,27 +53,9 @@ const Project = () => {
             <motion.div
               whileInView={{ opacity: [0, 1], y: [100, 0] }}
               transition={{ duration: 1, type: "tween" }}
-              className="w-[300px] shadow-lg shadow-black/50 md:w-[270px] h-fit bg-sec-color hover:border-teal-700 border-black border  rounded-xl overflow-hidden flex flex-col mx-5" key={project.id}>
-              <div className="w-[300px] md:w-[270px] h-[180px] overflow-hidden">
-                <Link to={"/projects/" + project.id}>
-                  <img src={project.imgUrl} alt={project.title} className='object-cover hover:scale-110 transition-all h-fit ' /></Link>
-              </div>
-
-              <h1 className='text-white/90 font-bold text-center py-3 text-2xl capitalize'>{project.title}</h1>
-              {/* <p className='text-slate-300 text-md px-5 text-justify'>{project.shortDescription}</p> */}
-
-              <div className="flex justify-between px-5 items-center my-2 border rounded-full mx-3 hover:border-teal-500 transition mb-5 border-white/10">
-
-                <Link to={project.liveLink} target='_blank'>
-                  <button className='p-2 rounded-md text-sm text-white  w-fit hover:underline cursor-pointer'>Live demo
-                  </button>
-                </Link>
-
-                <Link to={project.gitHubLink} target='_blank'>
-                  <button className='py-2 px-6 rounded-md text-sm text-white  ml-3 w-fit hover:underline cursor-pointer'><AiFillGithub className='text-2xl'/>
-                  </button>
-                </Link>
-              </div>
+              className=''
+              key={project.id}>
+              <Card imgUrl={project.imgUrl} title={project.title} id={project.id} liveLink={project.liveLink} GithubLink={project.gitHubLink} />
 
             </motion.div>)
 

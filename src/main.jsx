@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import { Home, Skills, Projects,  About, ProjectDetail } from './pages/index.js'
+import { Home, Skills, Projects, About, ProjectDetail, Services } from './pages/index.js'
 import AnimatedContact from './pages/Contact/AnimatedContact.jsx'
 
 
@@ -15,9 +15,10 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path='/skills' element={<Skills />} />
       <Route path='/projects' element={<Projects />} />
-      <Route path='/projects/:id' element={<ProjectDetail/>}/>
+      <Route path='/projects/:id' element={<ProjectDetail />} />
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<AnimatedContact />} />
+      <Route path='/services' element={<Services />} />
     </Route>
   )
 )

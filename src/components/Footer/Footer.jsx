@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 // import images from '../../constant/images'
 import { FaLinkedin } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
-import {AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 const Footer = () => {
   return (
 
-    <footer className=" bg-sec-color border-t">
+    <footer className=" bg-primary-color border-t">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center mb-4 sm:mb-0">
@@ -29,22 +29,22 @@ const Footer = () => {
 
           <div className="flex gap-3">
             <Link to="https://linkedin.com/in/danish-nazir-553310272" target='_blank'
-            className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
+              className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
               <FaLinkedin className='hover:text-sky-500 text-xl' />
             </Link>
 
             <Link to="https://www.upwork.com/workwith/danig6" target='_blank'
-            className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
-            <SiUpwork className='hover:text-teal-600 text-xl' />
+              className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
+              <SiUpwork className='hover:text-teal-600 text-xl' />
             </Link>
 
             <Link to="https://github.com/DaNiwebDevlper" target='_blank'
-            className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
-            <AiFillGithub className='hover:text-blue-800  text-[24px]' />
+              className="w-[30px] h-[30px] bg-slate-300 rounded-full flex justify-center items-center ">
+              <AiFillGithub className='hover:text-blue-800  text-[24px]' />
             </Link>
 
-            
-            
+
+
           </div>
         </div>
         <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />

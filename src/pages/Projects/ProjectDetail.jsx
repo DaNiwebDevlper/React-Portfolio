@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 import projects from "../../data/Projects.json"
 
@@ -37,11 +36,11 @@ const ProjectDetail = () => {
                                     {project.images.map((image, index) => (
                                         <div
                                             key={index}
-                                            className="w-full border border-teal-600 my-5  overflow-auto p-2"
+                                            className="max-h-[700px] border border-teal-600 my-5  overflow-hidden p-2"
                                         >
                                             <img
                                                 src={image}
-                                                className="w-full object-cover"
+                                                className="w-full object-cover "
                                             />
                                         </div>
                                     ))}

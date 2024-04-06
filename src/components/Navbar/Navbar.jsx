@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 
+
 const NavLinks = [
   { name: "Home", path: "/" },
   { name: "Projects", path: "/projects" },
   { name: "Skills", path: "/skills" },
+  { name: "Services", path: "/services" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ]
