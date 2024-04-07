@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import { About, Experience, Projects, Skills, Services } from "../index"
 
 
+
 const Home = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const Home = () => {
       <div className="mt-[100px]">
         <Experience />
       </div>
+
 
     </div>
   )
