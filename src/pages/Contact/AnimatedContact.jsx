@@ -7,9 +7,10 @@ const AnimatedContact = () => {
 
     const openGmail = () => {
         window.location.href = `mailto:dnazir343@gmail.com`;
-      };
+    };
 
-    ////////////////---Web3form---////////////////////
+    ////////////////---Web3form-start---////////////////////
+
     const [success, setSuccess] = useState(false);
 
     const Ref = useRef();
@@ -37,6 +38,9 @@ const AnimatedContact = () => {
         }
     };
 
+
+    ///////////---Web3Form-end---//////////////
+
     const isInView = useInView(Ref, { margin: "-100px" })
     return (
         <>
@@ -45,7 +49,7 @@ const AnimatedContact = () => {
             >
                 {/* //////////////////////---Cotact-Info---/////////////////////// */}
                 <div className="md:w-[50%] md:ml-11 md:pt-0 pt-6 md:mb-0 mb-9 flex flex-col pl-9 justify-center  gap-5">
-                    <motion.h1 className='text-white font-bold md:text-4xl text-3xl italic font-sans '
+                    <motion.h1 className='text-white font-bold md:text-4xl text-3xl italic font-madimi'
                         whileInView={{ y: [100, 0], opacity: [0, 1] }}
                         transition={{ duration: [1] }}>Lets Work Together</motion.h1>
                     <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}

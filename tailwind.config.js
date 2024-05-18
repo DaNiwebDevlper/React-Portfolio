@@ -1,4 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
+const {
+  default: flattenColorPalette
+} = require('tailwindcss/lib/util/flattenColorPalette')
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme('colors'))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  )
+
+  addBase({
+    ':root': newVars
+  })
+}
 export default {
   content: [
     "./index.html",
@@ -18,6 +34,8 @@ export default {
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        scroll:
+          'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
 
       },
       keyframes: {
@@ -31,6 +49,11 @@ export default {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        scroll: {
+          to: {
+            transform: 'translate(calc(-50% - 0.5rem))'
+          }
+        },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
@@ -42,6 +65,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
+  darkMode: 'class'
 }
 

@@ -17,7 +17,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full backdrop-blur-md bg-[#111]/40 sticky z-10 top-0  md:z-20">
+    <nav className="w-full backdrop-blur-md bg-[#111]/40 sticky  z-50 top-0">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
