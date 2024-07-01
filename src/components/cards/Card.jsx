@@ -10,7 +10,7 @@ const Card = ({ imgUrl, title, liveLink, GithubLink, id }) => {
                 {/* /////////---Card-Image---///////// */}
                 <CardItem
                     translateZ="50"
-                    className="w-full "
+                    className="w-full"
                 >
 
                     <Link to={"/projects/" + id}>
