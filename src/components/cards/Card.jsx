@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Card = ({ imgUrl, title, liveLink, GithubLink, id }) => {
     return (
         <CardContainer className="inter-var w-[300px] h-fit">
-            <CardBody className="bg-sec-color relative group/card border-black/20 rounded-xl border  hover:border-teal-500/50 flex flex-col items-center  h-fit gap-y-3 overflow-hidden hover:overflow-visible p-3">
+            <CardBody className="bg-sec-color relative group/card border-black/20 rounded-xl border  hover:border-teal-500/50 flex flex-col items-center h-fit gap-y-3 overflow-hidden hover:overflow-visible p-3">
 
                 {/* /////////---Card-Image---///////// */}
                 <CardItem
@@ -14,7 +14,7 @@ const Card = ({ imgUrl, title, liveLink, GithubLink, id }) => {
                 >
 
                     <Link to={"/projects/" + id}>
-                        <img src={imgUrl} className='w-full h-[180px] object-cover rounded-xl' /></Link>
+                        <img src={imgUrl} className='w-full h-[180px] object-cover rounded-md' /></Link>
 
                 </CardItem>
                 {/* ////////////---Card-Title//////// */}

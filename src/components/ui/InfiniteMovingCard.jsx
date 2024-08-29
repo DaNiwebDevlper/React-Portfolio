@@ -4,7 +4,7 @@ import { cn } from '../../utils/cn';  // Adjust the import path according to you
 export const InfiniteMovingCards = ({
     items,
     direction = 'left',
-    speed = 'fast',
+    speed = 'normal',
     pauseOnHover = true,
     className
 }) => {
@@ -65,7 +65,7 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, idx) => (
                     <li key={idx}>
-                        <img src={item.imgSrc} className="sm:w-[200px] w-[100px] h-[100px] sm:h-[200px] object-cover" alt="" />
+                        <img src={item.imgSrc} className="sm:w-[200px] w-[60px] h-[60px] sm:h-[200px] object-cover" alt="" />
                     </li>
                 ))}
             </ul>

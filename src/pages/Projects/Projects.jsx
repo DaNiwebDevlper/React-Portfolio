@@ -33,7 +33,7 @@ const Project = () => {
             <button
               key={option}
               onClick={() => setSelectedFilter(option)}
-              className={`mr-2 px-4 py-2 uppercase text-md md:text-lg rounded-full border border-teal-500 ${selectedFilter === option ? 'bg-teal-600 text-white' : 'text-teal-600'
+              className={`mr-2 px-4 py-2 uppercase text-md md:text-lg rounded-full border border-teal-500 ${selectedFilter === option ? 'bg-teal-600 text-white' : 'text-white'
                 }`}
             >
               {option}
@@ -41,7 +41,7 @@ const Project = () => {
           ))}
         </div>
 
-        <div className="md:w-[600px] w-[350px] h-[1px] bg-teal-600 mb-9"></div>
+        <div className="md:w-[600px] w-[350px] h-[1px] bg-white mb-9"></div>
 
 
       </div>
