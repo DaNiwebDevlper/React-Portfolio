@@ -1,14 +1,12 @@
 [
     {
-        "company": "TopSol_org",
-        "jobTitle":"Frontend Developer with typescript",
-        "description":"Spearheading front-end development at TopSol_org, leveraging React.js to build cutting-edge and responsive user interfaces.🌐Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
-
+        "company": "Evoke Valley",
+        "jobTitle": "Frontend Engineer",
+        "description": "Spearheading front-end development at Evoke Valley, leveraging React.js to build cutting-edge and responsive user interfaces.🌐Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
     },
     {
         "company": "TopSol_org",
-        "jobTitle":"Frontend Developer with typescript",
-        "description":"Spearheading front-end development at TopSol_org, leveraging React.js to build cutting-edge and responsive user interfaces. 🌐 Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
-
+        "jobTitle": "Frontend Developer with typescript",
+        "description": "Spearheading front-end development at TopSol_org, leveraging React.js to build cutting-edge and responsive user interfaces. 🌐 Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
     }
 ]

@@ -20,7 +20,7 @@ const Project = () => {
       transition={{ duration: 1, }}>
       <div className="hidden sm:block">
 
-        <Meteors />
+        {/* <Meteors /> */}
       </div>
       <div
         className="flex flex-col justify-center items-center">
@@ -51,8 +51,8 @@ const Project = () => {
 
           return (
             <motion.div
-              whileInView={{ opacity: [0, 1], y: [100, 0] }}
-              transition={{ duration: 1, type: "tween" }}
+              animate={{ opacity: [0, 1], y: [100, 0] }}
+              transition={{ duration: .5, type: "tween" }}
               className=''
               key={project.id}>
               <Card imgUrl={project.imgUrl} title={project.title} id={project.id} liveLink={project.liveLink} GithubLink={project.gitHubLink} />

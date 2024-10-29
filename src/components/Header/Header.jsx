@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
+import { animate, motion } from 'framer-motion'
 import header from "../../data/Header.json"
 const Header = () => {
 
     const sclaeVariants = {
-        whileInView: {
+        animate: {
             scale: [0, 1],
             opacity: [0, 1],
             transition: {
@@ -26,7 +26,7 @@ const Header = () => {
                 {/* /////---Intro-Badge---//// */}
                 <div className="flex md:justify-center justify-start  items-center  md:h-[90vh] ml-5">
                     <motion.div
-                        whileInView={{ y: [200, 50], opacity: [0, 1] }}
+                        animate={{ y: [200, 50], opacity: [0, 1] }}
                         transition={{ duration: 1.3 }}>
 
                         <div className='bg-teal-500/10 w-[200px] h-[100px] rounded-xl flex flex-col justify-center items-center mt-[-100px] '>
@@ -44,14 +44,14 @@ const Header = () => {
                 <div className="md:mt-[100px] ">
 
                     <motion.div
-                        whileInView={{ opacity: [0, 1] }}
+                        animate={{ opacity: [0, 1] }}
                         transition={{ duration: 1, delayChildren: 1 }}
                         className='relative flex flex-1 h-full justify-center sm:justify-end sm:items-end'>
 
                         <img src="/assets/profile.png" alt="profile_bg" className='z-10 relative md:top-[345px] md:right-[70px] md:w-[350px] w-[240px] bottom-7 ' />
 
                         <motion.img
-                            whileInView={{ scale: [0, 1] }}
+                            animate={{ scale: [0, 1] }}
                             transition={{ duration: 1.5, ease: "easeInOut" }}
                             src="assets/circle.svg"
                             alt='profile-circle'
@@ -63,7 +63,7 @@ const Header = () => {
                 {/* /////---Description-badge---//// */}
                 <motion.div
                     variants={sclaeVariants}
-                    whileInView={sclaeVariants.whileInView}
+                    animate={sclaeVariants.animate}
                     className='flex flex-1 md:flex-col  md:h-screen gap-3 md:items-start items-start justify-center md:justify-center'>
                     {header.skillsImages.map((image, index) => (
                         <div className='w-[80px] h-[80px] bg-teal-600/20 mt-9 md:mt-0  rounded-full flex items-center justify-center even:w-[120px] even:h-[120px] md:even:ml-9 even:mt-[80px] md:even:mt-0' key={`circle-${index}`}>

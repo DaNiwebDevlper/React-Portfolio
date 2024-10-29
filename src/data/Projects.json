@@ -1,5 +1,51 @@
 [
     {
+        "id": "6",
+        "title": "GMGC Library",
+        "stack": "React",
+        "shortDescription": "A fully functional instagram reels downloader website created using Next.js, for styling use Tailwind CSS, and MongoDB",
+        "description": " 📚 The GMDC Library Cataloging system streamlines library operations by enabling efficient book management and providing students with a user-friendly interface for searching for and locating books.",
+        "imgUrl": "/assets/library/banner.png",
+        "images": [
+            "/assets/library/home.png",
+            "/assets/library/search.png"
+        ],
+        "liveLink": "https://library.gmdc.edu.pk/",
+        "gitHubLink": "https://github.com/Hamzu001/gmgc-library-catalog-OPAC.git"
+    },
+    {
+        "id": "4",
+        "title": "Damned Design",
+        "stack": "Next",
+        "imgUrl": "/assets/damned-design/banner.png",
+        "shortDescription": "A fully functional Car-Buying app developed Next.js, for styling use Tailwind CSS, and DataBase use MongoDB",
+        "description": "🚀Excited to share my latest NextJS project where I work as a Frontend Developer - Damned Design – for high-quality knives and related accessories! 🗡️ Powered by Next.js, GraphQL, Tailwind CSS, and Material UI, and integrated with WooCommerce for a smooth backend experience, It offers:- Global online payments - Real-time order tracking - Advanced search & filters - Stunning, responsive design - User authentication & order history management",
+        "images": [
+            "/assets/damned-design/landing page.png",
+            "/assets/damned-design/catagory.png",
+            "/assets/damned-design/product.png",
+            "/assets/damned-design/tracking.png"
+        ],
+        "liveLink": "https://damneddesigns.com/",
+        "gitHubLink": "https://github.com/DaNiwebDevlper/"
+    },
+    {
+        "id": "5",
+        "title": "Guidance-net",
+        "stack": "React",
+        "imgUrl": "/assets/guidance-net/banner.png",
+        "shortDescription": "A fully functional college website created using React.js, for styling use Tailwind CSS, and DataBase use MongoDB",
+        "description": "🚀 Excited to share my latest MERN STACK project, Guidance-Net – a platform to connect users with top service providers, including lawyers, doctors, and real estate agents. Built using ReactJS, MongoDB, NodeJS, ExpressJS, and Tailwind CSS,Guidance-Net offers: ✔There are three types of logins: admin, service provider, and user ✔ Admin control to add and manage service providers ✔ Detailed service provider profiles and appointment booking ✔Real-time appointment requests are sent to providers' emails and stored in the database ✔ Providers can accept/reject appointment requests ✔Status updates are visible to both clients and providers I built this project as part of a classmate's final year project, bringing their vision to life with cutting-edge technology and innovative features.",
+        "images": [
+            "/assets/guidance-net/landing.png",
+            "/assets/guidance-net/services.png",
+            "/assets/guidance-net/about.png",
+            "/assets/guidance-net/contact.png"
+        ],
+        "liveLink": "/",
+        "gitHubLink": "https://github.com/DaNiwebDevlper/guidance_net-main.git"
+    },
+    {
         "id": "1",
         "title": "Kaiwan Pharma",
         "stack": "Next",

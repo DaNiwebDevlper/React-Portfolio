@@ -50,9 +50,9 @@ const AnimatedContact = () => {
                 {/* //////////////////////---Cotact-Info---/////////////////////// */}
                 <div className="md:w-[50%] md:ml-11 md:pt-0 pt-6 md:mb-0 mb-9 flex flex-col pl-9 justify-center  gap-5">
                     <motion.h1 className='text-white font-bold md:text-4xl text-3xl italic font-madimi'
-                        whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                        animate={{ y: [100, 0], opacity: [0, 1] }}
                         transition={{ duration: [1] }}>Lets Work Together</motion.h1>
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
+                    <motion.div animate={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.2] }} >
 
                         <h2 className='md:text-2xl text-xl text-white font-semibold'>Mail</h2>
@@ -64,7 +64,7 @@ const AnimatedContact = () => {
                     </motion.div>
 
 
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
+                    <motion.div animate={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.4] }}>
 
                         <Link to="https://linkedin.com/in/danish-nazir-553310272" target='_blank'
@@ -76,7 +76,7 @@ const AnimatedContact = () => {
                             </span>
                         </Link>
                     </motion.div>
-                    <motion.div whileInView={{ y: [70, 0], opacity: [0, 1] }}
+                    <motion.div animate={{ y: [70, 0], opacity: [0, 1] }}
                         transition={{ duration: [1.6] }}>
 
                         <Link to="https://www.upwork.com/workwith/danig6" target='_blank'>
@@ -96,7 +96,7 @@ const AnimatedContact = () => {
                 {/* //////////////////////---Cotact-Form---/////////////////////// */}
                 <div className="text-center flex flex-col justify-center items-center md:h-auto min-h-[90vh]" ref={Ref}>
                     <motion.div className=" relative "
-                        whileInView={{ opacity: 0 }}
+                        animate={{ opacity: 0 }}
                         initial={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 3 }}
                     >
@@ -115,7 +115,7 @@ const AnimatedContact = () => {
                     </motion.div>
 
                     <motion.div className="z-10"
-                        whileInView={{ opacity: 1, y: [100, 0] }}
+                        animate={{ opacity: 1, y: [100, 0] }}
                         initial={{ opacity: 0 }}
                         transition={{ duration: 1, delay: 4 }}>
 

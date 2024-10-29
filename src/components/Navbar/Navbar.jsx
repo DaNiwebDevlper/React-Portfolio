@@ -69,23 +69,22 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+            className={`flex-1 w-full justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
               }`}
           >
             <ul
-              className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 px-4 py-4 font-semibold rounded-full md:ml-[-70px]">
+              className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 px-4 py-4 font-semibold rounded-full sm:ml-[-70px] w-full">
 
               {NavLinks.map((navLink, i) => (
                 <li
-                  className="text-black font-semibold text-[18px]
-               hover:text-rose-800"
+                  className="text-black font-semibold text-[18px] w-full"
                   key={i}>
                   <NavLink
                     onClick={() => setNavbar(false)}
                     to={navLink.path}
                     className={({ isActive }) =>
-                      `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
-                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent  lg:border-0 hover:text-[#0abab4d0] lg:p-0`
+                      `block text-left pl-4 sm:pl-0 w-full duration-200 ${isActive ? "text-[#0abab4d0] font-bold" : "text-gray-100"
+                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent  sm:border-0 hover:text-[#0abab4d0] lg:p-0`
                     }
                   >
                     {navLink.name}
