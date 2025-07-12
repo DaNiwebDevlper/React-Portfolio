@@ -1,18 +1,18 @@
 [
     {
-        "degree": "BS Computer Science",
-        "insitute": "GC Universty Faisalabad",
-        "session": "2020-2024",
-        "course": "C++, OPP,  Mobile-development(Java), Data Stucture & Algorithm, Artificial Inteligence, Design and analysis of algorithms, Database System, web development"
-    },
-    {
-        "degree": "Intermediate in Computer Science (ICS)",
-        "insitute": "Shiblee College faisalabad",
-        "session": "2018-2020"
-    },
-    {
-        "degree": "Matric in Computer Science",
-        "insitute": "Center of Execellence Higher Secondary School jaranwala",
-        "session": "2016-2018"
+        "id": 1,
+        "degree": "Bachelor of Science in Computer Science",
+        "school": "GC University of Faisalabad",
+        "location": "Faisalabad, Pakistan",
+        "period": "2020 - 2024",
+        "gpa": "3.2/4.0",
+        "description": "Focused on software engineering, algorithms, and web development. Participated in various coding competitions and hackathons.",
+        "courses": [
+            "Data Structures",
+            "Algorithms",
+            "Web Development",
+            "Database Systems",
+            "Software Engineering"
+        ]
     }
 ]
