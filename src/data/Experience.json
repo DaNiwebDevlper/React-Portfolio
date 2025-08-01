@@ -1,12 +1,67 @@
 [
     {
-        "company": "Evoke Valley",
-        "jobTitle": "Frontend Engineer",
-        "description": "Spearheading front-end development at Evoke Valley, leveraging React.js to build cutting-edge and responsive user interfaces.🌐Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
+        "id": 1,
+        "title": "Senior Frontend Developer",
+        "company": "VorkSol",
+        "location": "Rawalpindi, Pakistan",
+        "period": "Jan 2025 - Present",
+        "description": "Joined Vorksol as a ReactJS Developer, where I contributed to building scalable, user-friendly web applications. My role involves crafting responsive interfaces, integrating APIs, and ensuring seamless performance while adhering to best practices in front-end development.",
+        "achievements": [
+            "Improved application performance by 40%",
+            "Led a team of 2 developers",
+            "Implemented modern CI/CD pipelines"
+        ],
+        "technologies": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "AWS",
+            "Azure",
+            "Supabase"
+        ]
     },
     {
+        "id": 2,
+        "title": "Frontend Developer",
+        "company": "Evoke Valley",
+        "location": "Remote",
+        "period": "Sep 2024 - May 2025",
+        "description": "As a Frontend Engineer, I specialize in building user-friendly, responsive web applications using modern technologies like JavaScript, React, Next.js, Tailwind CSS, and Redux Toolkit. I focus on creating high-performance, scalable, and maintainable code while ensuring seamless user experiences across all devices. My work involves collaborating closely with backend developers, designers, and stakeholders to deliver high-quality software solutions that meet business objectives and enhance user satisfaction.",
+        "achievements": [
+            "Built 5+ responsive NEXTJS applications",
+            "Reduced load times by 35%",
+            "Used ThreeJs for interactive 3D graphics"
+        ],
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "React",
+            "Redux Toolkit",
+            "JavaScript",
+            "Tailwind CSS",
+            "Three.js"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Junior Web Developer",
         "company": "TopSol_org",
-        "jobTitle": "Frontend Developer with typescript",
-        "description": "Spearheading front-end development at TopSol_org, leveraging React.js to build cutting-edge and responsive user interfaces. 🌐 Collaborating with cross-functional teams to deliver high-quality, scalable solutions that elevate the user experience."
+        "location": "Faisalabad, Pakistan",
+        "period": "2019 - 2020",
+        "description": "Started my career building modern web applications and learning industry best practices. Contributed to various projects and gained valuable experience.",
+        "achievements": [
+            "Delivered 10+ projects on time",
+            "Learned modern development workflows",
+            "Contributed to real world projects"
+        ],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Git"
+        ]
     }
 ]
